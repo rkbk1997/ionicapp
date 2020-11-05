@@ -11,6 +11,13 @@ export class FolderPage implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute) { }
 
+  slideOpts = {
+    effect:  'flip',
+    autoplay: {
+    delay: 2000
+    }
+    };
+
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
   }
