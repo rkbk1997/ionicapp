@@ -1,13 +1,131 @@
 <ion-header [translucent]="true" style="background-color: rgb(221, 155, 67);">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button style="color: green;"></ion-menu-button>
+      <ion-menu-button style="color: red"></ion-menu-button>
     </ion-buttons>
-    <ion-title>E-Education</ion-title>
+    <ion-title style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">E-Education</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" style="margin-bottom: 0; padding: 0;">
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <img src="assets/undraw_professor_8lrt.png" alt="">
+        <h3>Make Your Carrer Bright With Us</h3>
+        <ion-button color="danger">Enroll Now</ion-button>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="assets/undraw_book_reading_kx9s.png" alt="">
+        <h3>We Provide Books For Learing</h3>
+        <ion-button color="danger">Try It Now</ion-button>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="assets/undraw_road_to_knowledge_m8s0.png" alt="">
+        <h3>Make Success Path For Your Carrer</h3>
+        <ion-button color="danger">Enroll Now</ion-button>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  
+
+  <ion-card class="top">
+    <ion-card-header>
+      <ion-card-title><ion-icon name="book-outline"></ion-icon>&nbsp;Learn Anything Online</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      With online learning students can be together in the classroom with an instructor while working through their digital lessons and assessments.
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="top">
+    <ion-card-header>
+      <ion-card-title><ion-icon name="people-outline"></ion-icon>&nbsp;Talk to Our Experts</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Speaking to experts is a common way to gain a lot of information about a topic quickly.
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="top">
+    <ion-card-header>
+      <ion-card-title><ion-icon name="chatbubbles-outline"></ion-icon>&nbsp;Communicate with People</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      It is not enough to show people how to live better: there is a mandate for any group with enormous powers of communication to show people how to be better.    </ion-card-content>
+  </ion-card>
+  <ion-button color="danger" class="more">More</ion-button>
+
+  <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;padding-bottom: 20px; padding-top: 20px;font-size: 35px;">
+    Course Offered</h1>
+
+  <ion-slides class="course">
+    <ion-slide>
+      <ion-card class="card">
+        <img src="assets/angular.png" alt="">
+        <h3>Angular </h3>
+        <h3>
+          <ion-icon name="time-outline" style="color: red;"></ion-icon>&nbsp;45 Days&nbsp;&nbsp;&nbsp;
+          <ion-icon name="logo-usd" style="color: red;"></ion-icon>&nbsp;30
+        </h3>
+        <ion-button color="danger">Enroll Now</ion-button>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="card">
+        <img src="assets/angular.png" alt="">
+        <h3>Angular </h3>
+        <h3>
+          <ion-icon name="time-outline" style="color: red;"></ion-icon>&nbsp;45 Days&nbsp;&nbsp;&nbsp;
+          <ion-icon name="logo-usd" style="color: red;"></ion-icon>&nbsp;30
+        </h3>
+        <ion-button color="danger">Enroll Now</ion-button>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="card">
+        <img src="assets/angular.png" alt="">
+        <h3>Angular </h3>
+        <h3>
+          <ion-icon name="time-outline" style="color: red;"></ion-icon>&nbsp;45 Days&nbsp;&nbsp;&nbsp;
+          <ion-icon name="logo-usd" style="color: red;"></ion-icon>&nbsp;30
+        </h3>
+        <ion-button color="danger">Enroll Now</ion-button>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="card">
+        <img src="assets/angular.png" alt="">
+        <h3>Angular </h3>
+        <ion-button color="danger">Enroll Now</ion-button>
+      </ion-card>
+    </ion-slide>
+    
+  </ion-slides>
+
+
+
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-content [fullscreen]="true" style="margin-bottom: 0; padding: 0;">
+  <ion-card>
   <ion-slides pager="true" [options]="slideOpts">
     <ion-slide>
       <img src="../../assets/evie-s-yDN0aAiHSMg-unsplash.jpg" alt="">
@@ -33,4 +151,4 @@
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
   </ion-card>
-</ion-content>
+</ion-content> -->

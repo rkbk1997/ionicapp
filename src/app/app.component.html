@@ -3,8 +3,11 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>E-Educcation</ion-list-header>
-          <ion-note>eeducatio.info@gmail.com</ion-note>
+          <ion-list-header style="font-family: 'Times New Roman', Times, serif;">
+            <img src="assets/undraw_Graduation_ktn0.png" style="height: 50px;width: 50px;" alt="">
+            E-Education
+          </ion-list-header>
+          <ion-note style="padding-top: 10px;padding-bottom: 10px;"><ion-icon name="mail-outline"></ion-icon>&nbsp;&nbsp;eeducatio.info@gmail.com</ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">

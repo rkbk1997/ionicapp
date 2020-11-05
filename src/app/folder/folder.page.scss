@@ -1,0 +1,56 @@
+ion-button{
+    margin-bottom: 30px;
+}
+ion-slides{
+ion-card{
+    all: unset;
+    height: 350px;;
+    img{
+        height: 200px;
+    }
+    ion-button{
+        width: 50%;
+        font-weight: bolder;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+}
+}
+.top{
+    ion-card-title{
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1px;
+            ion-icon{
+            color: red;
+        }
+    }
+    ion-card-content{
+        color: black;
+        letter-spacing: 1px;
+    }
+}
+.more{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.course .card{
+    box-shadow: 2px 2px 20px blanchedalmond;
+    // border: 10px solid blue !important;
+    width: 100%;
+    ion-button{
+        margin-bottom: 20px !important;
+    }
+}
+.course{
+    margin-bottom: 20px;
+}
