@@ -7,10 +7,13 @@
             <img src="assets/undraw_Graduation_ktn0.png" style="height: 50px;width: 50px;" alt="">
             E-Education
           </ion-list-header>
-          <ion-note style="padding-top: 10px;padding-bottom: 10px;"><ion-icon name="mail-outline"></ion-icon>&nbsp;&nbsp;eeducatio.info@gmail.com</ion-note>
+          <ion-note style="padding-top: 10px;padding-bottom: 10px;">
+            <ion-icon name="mail-outline"></ion-icon>&nbsp;&nbsp;eeducatio.info@gmail.com
+          </ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
+            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
+              detail="false" [class.selected]="selectedIndex == i">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>

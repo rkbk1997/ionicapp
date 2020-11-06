@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import { timer } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -23,28 +23,29 @@ export class AppComponent implements OnInit {
       icon: 'information-circle'
     },
     {
-      title: 'Login',
-      url: '/login',
-      icon: 'key'
+      title: 'Courses',
+      url: '/folder',
+      icon: 'book'
     },
     {
-      title: 'Register',
+      title: 'News',
       url: '/folder',
-      icon: 'add'
+      icon: 'newspaper'
+    },
+    {
+      title: 'Events',
+      url: '/folder',
+      icon: 'radio'
     },
     {
       title: 'Logout',
       url: '/folder',
       icon: 'power'
     },
-    // {
-    //   title: 'Spam',
-    //   url: '/folder/Spam',
-    //   icon: 'warning'
-    // }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
+  showSplash = true;
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,

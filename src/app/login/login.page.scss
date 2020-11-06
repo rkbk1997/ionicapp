@@ -1,18 +1,29 @@
-ion-card-subtitle{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    color: black;
+*{
+    padding: 0;
+    margin: 0;
 }
-img{
-    height: 100px;
-    width: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    border-radius: 50%;
-}
-ion-button{
-    margin-top:20px;
+ion-card{
+    padding-top: 60%;
+    background-color: transparent;
+    box-shadow: none;
+    ion-card-title{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    ion-item{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 70%;
+    }
+    ion-button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 70%;
+    }
 }

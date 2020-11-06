@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-
+import { ActivatedRoute, Router } from '@angular/router';
+import {timer} from 'rxjs';
 @Component({
   selector: 'app-folder',
   templateUrl: './folder.page.html',
@@ -8,8 +8,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class FolderPage implements OnInit {
   public folder: string;
+  showSplash = false;
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) { 
+    if (!localStorage.getItem('user')){
+      this.router.navigate(['/login']);
+    }
+  }
 
   slideOpts = {
     effect:  'flip',
@@ -20,6 +25,8 @@ export class FolderPage implements OnInit {
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+    this.showSplash = true;
+    timer(4000).subscribe(() => this.showSplash = false );
   }
 
 }
