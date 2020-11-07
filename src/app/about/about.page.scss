@@ -1,0 +1,21 @@
+.top{
+    min-height: 400px;
+    ion-card-title{
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1px;
+            ion-icon{
+            color: red;
+            font-size: 150px;
+            margin-left: auto;
+            margin-right:auto;
+            display: block;
+        }
+    }
+    ion-card-content{
+        color: black;
+        letter-spacing: 1px;
+    }
+}

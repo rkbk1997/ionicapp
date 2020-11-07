@@ -1,0 +1,51 @@
+<ion-header [translucent]="true" style="background-color: transparent;">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: red"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">About</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <h3 style="text-align: center;font-size: 30px;font-family: 'Times New Roman', Times, serif;">About Us...</h3> -->
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card class="top">
+        <ion-card-header>
+          <ion-card-title>
+            <ion-icon name="book-outline"></ion-icon>&nbsp;Learn Anything Online
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          With online learning students can be together in the classroom with an instructor while working through their
+          digital lessons and assessments.
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="top">
+        <ion-card-header>
+          <ion-card-title>
+            <ion-icon name="people-outline"></ion-icon>&nbsp;Talk to Our Experts
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Speaking to experts is a common way to gain a lot of information about a topic quickly.
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="top">
+        <ion-card-header>
+          <ion-card-title>
+            <ion-icon name="chatbubbles-outline"></ion-icon>&nbsp;Communicate with People
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          It is not enough to show people how to live better: there is a mandate for any group with enormous powers of
+          communication to show people how to be better. </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

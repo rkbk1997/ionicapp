@@ -50,7 +50,7 @@ export class LoginPage implements OnInit,AfterViewInit {
       .signInWithPhoneNumber(`${this.phoneNumber}`, appVerifier)
       .then((Result: any) => {
         this.windowRef.confirmationResult = Result;
-        this.router.navigate(['/otp'])
+        this.router.navigate(['/otp']);
       })
       .catch((error) =>{
         this.message = error.message;
